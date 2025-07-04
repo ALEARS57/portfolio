@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>˗ˏˋ ALEARS | HDM CampusMarkt ´ˎ˗</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="scripts.js" defer></script>
+    <script src="../../common/js/navbar.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+    <header>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="hamburger" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <a href="../../home/index.html" class="logo">ALEARS</a>
+            <nav class="nav-links">
+                <a href="../../home/index.html">Home</a>
+                <a href="../../work/index.html">Work</a>
+                <a href="../../about/index.html">About</a>
+                <a href="your-cv-link" class="download-cv">Download CV</a>
+            </nav>
+            <div class="spacer"></div>
+        </div>
+
+        <div class="mobile-nav-overlay" id="mobileNav">
+            <nav class="mobile-nav">
+                <div class="mobile-nav__header">
+                    <div class="logo logo--centered">ALEARS</div>
+                    <button class="mobile-nav__close" id="closeNav">×</button>
+                </div>
+                <ul class="mobile-nav__list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cv">Download CV</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="case-study">
+            <div class="case-study-container">
+                <div class="case-study-image">
+                    <img src="../01_HDMCM/images/content/01_thumbnail.png" alt="Project Thumbnail" />
+                </div>
+                <div class="case-study-content">
+                    <h2>HDM CampusMarkt</h2>
+                    <p>A simple marketplace app tailored to our campus community, designed to make student-to-student
+                        buying and selling easy, fast, and secure.
+                    </p>
+
+                    <div class="project-info">
+                        <p><strong>Project Type:</strong> Software Development</p>
+                        <p><strong>Role:</strong> Designer & Developer</p>
+                        <p><strong>Duration:</strong> Q3 2023</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <section class="gallery">
+        <div class="gallery-container">
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/01.png">
+                <img src="../01_HDMCM/images/content/01.png" alt="Case Study 1" />
+            </a>
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/02.png">
+                <img src="../01_HDMCM/images/content/02.png" alt="Case Study 2" />
+            </a>
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/03.png">
+                <img src="../01_HDMCM/images/content/03.png" alt="Case Study 3" />
+            </a>
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/04.png">
+                <img src="../01_HDMCM/images/content/04.png" alt="Case Study 4" />
+            </a>
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/05.png">
+                <img src="../01_HDMCM/images/content/05.png" alt="Case Study 5" />
+            </a>
+            <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/06.png">
+                <img src="../01_HDMCM/images/content/06.png" alt="Case Study 1" />
+            </a>
+        </div>
+    </section>
+    <section class="process" id="process">
+        <h2>The Process</h2>
+        <div class="process-steps">
+            <a href="#discover" class="process-step">
+                <img src="../01_HDMCM/images/discover.png" alt="Discover icon" class="process-icon" />
+                <p>DISCOVER</p>
+            </a>
+            <a href="#define" class="process-step">
+                <img src="../01_HDMCM/images/define.png" alt="Define icon" class="process-icon" />
+                <p>DEFINE</p>
+            </a>
+            <a href="#develop" class="process-step">
+                <img src="../01_HDMCM/images/develop.png" alt="Develop icon" class="process-icon" />
+                <p>DEVELOP</p>
+            </a>
+            <a href="#prototype" class="process-step">
+                <img src="../01_HDMCM/images/prototype.png" alt="Prototype icon" class="process-icon" />
+                <p>PROTOTYPE</p>
+            </a>
+            <a href="#deliver" class="process-step">
+                <img src="../01_HDMCM/images/deliver.png" alt="Deliver icon" class="process-icon" />
+                <p>DELIVER</p>
+            </a>
+        </div>
+    </section>
+    <section class="overview" id="overview">
+        <h3>Overview</h3>
+        <h2>Campus Marketplace – Buy & Sell With Ease</h2>
+        <p>
+            A user-friendly desktop application that enables students to sell and buy second-hand items easily within
+            their campus environment. It was our first large-scale JavaFX project, where we combined the basics we
+            learned in our first semester with new concepts in UI development, problem-solving, and collaborative
+            workflow. </p>
+
+        <div class="overview-cards">
+            <div class="overview-card">
+                <img src="../01_HDMCM/images/goals.png" alt="Goals Image" class="overview-img">
+                <h4>Goals</h4>
+                <p>
+                    <li>
+                        Create a clean, intuitive marketplace UI that enables users to easily browse, list, and purchase
+                        items.
+                    </li>
+                    <br>
+                    <li>
+                        Support essential marketplace functions like user registration, item listings with images, and
+                        secure transactions.
+                    </li>
+                    <br>
+                    <li>
+                        Encourage trust between users through clear navigation and structured content.
+                    </li>
+                </p>
+            </div>
+
+            <div class="overview-card">
+                <img src="../01_HDMCM/images/challenge.png" alt="Challenges Image" class="overview-img">
+                <h4>Challenges</h4>
+                <p>
+                    <li>Balancing simplicity with feature completeness, especially for less tech-savvy users.</li>
+                    <br>
+                    <li>Implementing a functional and responsive interface using JavaFX, which was new to our team.</li>
+                    <br>
+                    <li>Achieving a secure and smooth user experience across the entire user journey.</li>
+                </p>
+            </div>
+
+            <div class="overview-card">
+                <img src="../01_HDMCM/images/mygoal.png" alt="My Goal Image" class="overview-img">
+                <h4>My Goal</h4>
+                <p>
+                    <br>
+                    I aimed to go beyond functionality and explore how technical projects can be designed with the user
+                    in mind. My personal goal was to make the UI clear and accessible—even to people who aren't
+                    tech-savvy—and use this opportunity to improve my frontend logic and visual consistency.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="discover" class="section discover-section">
+        <div class="container">
+            <h4 class="section-subtitle">Discover</h4>
+            <h2 class="section-title">Understanding Student Needs</h2>
+            <p class="section-description">
+                To better understand how users interact with peer-to-peer marketplaces, we analyzed apps like Vinted and
+                local listing platforms. We conducted informal interviews with students to understand pain points when
+                buying or selling second-hand items and sketched out basic assumptions based on their needs.
+            </p>
+
+            <div class="discover-columns">
+                <div class="column">
+                    <h3>Problem Statement</h3>
+                    <p>
+                        Students lack a simple, safe, and centralized way to exchange second-hand goods within their
+                        campus community. Existing platforms feel too broad, overwhelming, or impersonal for local,
+                        student-centered transactions.
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h3>Questions</h3>
+                    <p>We had many questions right off the bat...</p>
+                    <ul>
+                        <li>
+                            What features matter most when listing or purchasing an item?
+                        </li>
+                        <li>
+                            How can we establish trust between students?
+                        </li>
+                        <li>
+                            Which friction points prevent people from using peer-to-peer marketplaces?
+                        </li>
+                        <li>
+                            What would make this app worth using over messaging apps or existing platforms?
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="define" class="section define-section">
+        <div class="container">
+            <h4 class="section-subtitle">Define</h4>
+            <h2 class="section-title">Refining the Core Experience</h2>
+            <p class="section-description">
+                We analyzed responses and feedback to extract clear needs...
+            </p>
+
+            <div class="define-top">
+                <div class="persona-text">
+                    <ul>
+                        <li>
+                            A platform that’s fast to use, visually simple, and doesn’t overcomplicate things.
+                        </li>
+                        <li>
+                            Student-specific filters (e.g., dorm pickup, course materials).
+                        </li>
+                        <li>
+                            Optional verification via campus email to build trust.
+                        </li>
+                        <li>
+                            Ability to chat or ask questions before buying.
+                        </li>
+                    </ul>
+                    <br>
+                    </p>
+                    <h3>Persona Development</h3>
+                    <p>
+                        This project marked a turning point where I began connecting design decisions with technical
+                        execution. I started noticing how small layout details could change how people use a feature,
+                        and learned to prototype, test, and iterate ideas in code. It also improved how I communicate
+                        design intent within our team.
+                    </p>
+                </div>
+                <div class="persona-image">
+                    <img src="../01_HDMCM/images/content/07.png" alt="Persona Lea" />
+                </div>
+            </div>
+
+            <div class="define-bottom">
+                <div class="focus">
+                    <h3>Defining the Focus</h3>
+                    <ul>
+                        <li>Simplicity: Minimal steps to list, browse, and buy.</li>
+                        <li>Speed: Fast-loading views with clear content.</li>
+                        <li>Student Trust: Familiar visual language and campus-only access.</li>
+                    </ul>
+                </div>
+                <div class="insights">
+                    <h3>User Insights</h3>
+                    <ul>
+                        <li>Users want a way to view item condition and price at a glance.</li>
+                        <li>Messaging is preferred over automatic transactions—they want to negotiate.</li>
+                        <li>Clarity of categories and search filters makes a big difference in engagement.</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
+    <section id="develop" class="section develop-section">
+        <div class="container">
+            <h4 class="section-subtitle">Develop</h4>
+            <h2 class="section-title">Building the Experience in Code</h2>
+            <p class="section-description">
+                We developed the app in Java using JavaFX for the GUI and CSS for styling. Core functionality included
+                user authentication, item listing, and dynamic content rendering. The development process was shaped by
+                frequent iteration, bug fixing, and learning how to break features into modular components for testing
+                and deployment.
+            </p>
+
+            <!-- User Flow Journey -->
+            <div class="develop-block">
+                <h3>User Flow Journey</h3>
+                <p>
+                    We designed the user journey to be intuitive and efficient, ensuring that each step felt familiar
+                    and easy to navigate. A user could quickly register or log in with their email credentials, then
+                    immediately access a personalized feed showing the most recent listings. From there, they could
+                    browse categories or use the search bar to find specific items. Selecting a product opened a
+                    detailed view with images, a description, and seller contact options. Communication between buyer
+                    and seller was handled through a built-in messaging system that kept everything within the app.
+                    Listing an item was equally seamless, requiring only a few fields and an image upload before it was
+                    ready to go live.
+                </p>
+                <img src="../01_HDMCM/images/content/00.jpg" alt="User Flow Journey" />
+            </div>
+
+            <!-- Site Structure -->
+            <div class="develop-block">
+                <h3>Site Structure</h3>
+                <p>
+                    The application was built using a modular architecture inspired by the Model-View-Controller (MVC)
+                    design pattern. This allowed for a clear separation between data management, visual layout, and
+                    interaction logic. Each section of the app—such as login, item listing, browsing, and messaging—was
+                    structured as an individual scene, making it easier to develop and test independently. The views
+                    were constructed using JavaFX, styled through custom CSS to maintain consistency, while the
+                    controllers handled all navigation and user input. This structure kept our development process
+                    organized and scalable as the project evolved.
+                </p>
+            </div>
+
+            <!-- Early Concepts -->
+            <div class="develop-block">
+                <h3>Early Concepts</h3>
+                <p>
+                    At the beginning of the project, we started with simple paper sketches to outline the structure and
+                    layout of our marketplace. These low-fidelity wireframes helped us get quick feedback and iterate on
+                    the layout before committing to development. We focused on clarity—designing with minimal
+                    distractions and prioritizing functionality. Our earliest ideas included a card-style layout for
+                    listings, clear filtering options, and a simple upload flow. These concepts helped us define what
+                    the app should do at its core, and what kind of visual hierarchy would support a seamless
+                    experience.
+                </p>
+                <img src="./images/content/08.png" alt="Early Concepts" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Prototype Section -->
+    <section id="prototype" class="section prototype-section">
+        <div class="container">
+            <h4 class="section-subtitle">Prototype</h4>
+            <h2 class="section-title">Early Wireframes & Testing</h2>
+            <p class="section-description">
+                The first working prototype was developed directly in JavaFX and featured all core functionalities,
+                including account registration, login, item browsing, listing creation, and internal messaging. We kept
+                the visuals intentionally basic at this stage so we could focus on testing logic, navigation, and error
+                handling. Multiple iterations were required, especially around input validation and scene transitions,
+                but each round brought us closer to a stable, usable app. Once the foundational features were tested
+                thoroughly, we moved on to implementing our design system for a more polished final appearance.
+            </p>
+
+        </div>
+    </section>
+
+    <section id="style-guide" class="section style-guide-section">
+        <div class="container">
+            <h4 class="section-subsubtitle">Design System</h4>
+            <p class="section-description">
+                Since we were working within the limitations of JavaFX, styling had to be approached with care. Using
+                CSS, we created a visual identity that was both calm and functional. The design leaned on soft edges,
+                muted greens and greys, and a generous use of whitespace to evoke a sense of trust and familiarity. Font
+                choices emphasized readability, and contrast was carefully balanced to ensure accessibility across
+                different devices. Every visual element was kept consistent across the application, which not only made
+                it feel more professional but also easier to use.
+            </p>
+
+            <div class="style-guide-row case-study-gallery">
+                <a data-fancybox="case-study-gallery" href="../01_HDMCM/images/content/000.png">
+                    <img src="../01_HDMCM/images/content/000.png" alt="Style Guide 1" />
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Final Design Section -->
+    <section id="final-design" class="section final-design-section">
+        <div class="container">
+            <h3>Final Design</h3>
+
+            <video width="100%" controls>
+                <source src="/case-studies/01_HDMCM/images/content/video.mp4" type="video/mp4">
+            </video>
+            <div class="final-design">
+            </div>
+        </div>
+    </section>
+
+    <section id="deliver" class="section deliver-section">
+        <div class="container">
+            <h4 class="section-subtitle">DELIVER</h4>
+            <h2 class="section-title">Reflections & Take-aways</h2>
+            <p class="section-description">
+                We completed and delivered the project as a functional desktop application, fully documented and
+                submitted as part of our university coursework. The submission included not only the application itself
+                but also the full development process, from planning and wireframing to implementation and testing.
+                Looking back, this project stands as our first major software product—a tangible result of everything we
+                had learned up to that point.
+            </p>
+        </div>
+    </section>
+
+    <section id="thank-you" class="section thank-you-section">
+        <div class="container thank-you-container">
+            <div class="thank-you-left">
+                <h2>Thank you for reading!</h2>
+                <p>Tools used:</p>
+                <ul class="tools-list">
+                    <li>Java FX</li>
+                    <li>Scene Builder</li>
+                    <li>CSS</li>
+                    <li>Figma</li>
+                    <li>IntelliJ IDEA (Java)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="more-projects" class="section more-projects-section">
+        <div class="container">
+            <h2 class="section-title">More Projects</h2>
+            <div class="projects-grid">
+                <a href="../02_MetalLyf/index.html" class="work-card-link">
+                    <div class="work-card">
+                        <img src="../01_HDMCM/images/Other/02_thumbnail.png" alt="MetalLyfe">
+                        <div class="project-tag school"><span class="heart-icon">school</span>Academic Project</div>
+                        <h3>MetalLyfe</h3>
+                        <p>A music streaming app with integrated social features that encourage sharing, discovery, and
+                            meaningful interaction between users.</p>
+                        <span class="view-project">View project</span>
+                    </div>
+                </a>
+
+                <a href="../03_Paula/index.html" class="work-card-link">
+                    <div class="work-card">
+                        <img src="../03_Paula/images/Other/03_thumbnail.png" alt="Paula">
+                        <div class="project-tag"><span class="heart-icon">favorite</span>Passion Project</div>
+                        <h3>Paula</h3>
+                        <p>A conversational AI assistant designed to support elderly users, especially those with
+                            dementia, by providing intuitive and human-like interactions.</p>
+                        <span class="view-project">View project</span>
+                    </div>
+                </a>
+
+                <a href="../05_NextCl/index.html" class="work-card-link">
+                    <div class="work-card">
+                        <img src="../01_HDMCM/images/Other/05_thumbnail.png" alt="NextCloud">
+                        <div class="project-tag school"><span class="heart-icon">school</span>Academic Project</div>
+                        <h3>NextCloud Poll Idea</h3>
+                        <p>An interface extension for NextCloud that introduces polls within chat, empowering users to
+                            make collaborative decisions with ease.</p>
+                        <span class="view-project">View project</span>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="view-all-btn">
+                <a href="../../work/index.html" class="button button-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="progress-nav-container">
+
+        <nav class="progress-nav">
+            <a href="#discover">Discover</a>
+            <a href="#define">Define</a>
+            <a href="#develop">Develop</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#deliver">Deliver</a>
+            <a href="#" class="scroll-to-top">↑</a>
+        </nav>
+    </div>
+    <div class="progress-bar-container">
+        <div class="progress-bar"></div>
+
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <h4 class="footer-logo">ALEARS</h4>
+            <p class="footer-description">© 2025 Aleyna Arslan <br> Coded with cozy playlists and bunny cuddles. ❤️🐰
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-section footer-links">
+            <div class="quick-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../../home/index.html">Home</a></li>
+                    <li><a href="../../work/index.html">Work</a></li>
+                    <li><a href="../../about/index.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer-section contact-info">
+            <h4>Contact Me</h4>
+            <a href="mailto:aleyna.arslan557@gmail.com" class="email-link">
+                <span class="material-icons">email</span> aleyna.arslan557@gmail.com
+            </a>
+        </div>
+    </div>
+</footer>
+
+</html>
