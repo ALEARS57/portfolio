@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>˗ˏˋ ALEARS | About Me ´ˎ˗</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- External Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <script src="../common/js/navbar.js" defer></script>
+  <script src="../common/js/canvasBackground.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="canvas-wrapper">
+      <canvas id="backgroundCanvas"></canvas>
+    </div>
+    <div class="header-content">
+      <h1>About Me</h1>
+    </div>
+    <!-- Navigation -->
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="../home/index.html" class="logo">ALEARS</a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../work/index.html">Work</a>
+        <a href="../about/index.html">About</a>
+        <a href="your-cv-link" class="download-cv">Download CV</a>
+      </nav>
+      <div class="spacer"></div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <nav class="mobile-nav">
+        <div class="mobile-nav__header">
+          <div class="logo logo--centered">ALEARS</div>
+          <button class="mobile-nav__close" id="closeNav">×</button>
+        </div>
+        <ul class="mobile-nav__list">
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="#cv">Download CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<main class="container">
+  <section class="about-section">
+    <div class="about-image">
+      <img src="../about/images/20230829_111107.jpg" alt="About me portrait">
+    </div>
+    <div class="about-text">
+      <h2>My Work</h2>
+      <p>
+        Design has always been my way of understanding the world — not just how things look, but why they work the way they do. I didn’t follow a straight path into this field; I followed instincts, tutorials, and the occasional design rabbit hole until it all started to make sense. <br><br>
+
+What I enjoy most about design is that it sits right at the intersection of creativity and logic. I love finding that balance — the part where I get to shape something beautiful and make sure it actually works. That’s also why I care deeply about development: I don’t just want to hand off files — I want to understand what’s possible, push boundaries, and sometimes build it myself. <br><br>
+
+Whether I’m prototyping a UI, testing out interactions, or refining layouts for clarity and emotion, my goal stays the same: to create experiences that feel thoughtful, intuitive, and quietly delightful. <br><br>
+
+This portfolio is a snapshot of that mindset — visual storytelling backed by intention and a little bit of code. 😊
+      </p>
+    </div>
+  </section>
+</main>
+
+<section class="hobbies-section">
+  <h2>Where can you find me when I am not working?</h2>
+  <p>
+When I’m not designing, I like to keep my hands (and brain) busy with cozy, creative, or chaotic side quests! These little hobbies keep me inspired... and mildly sane!
+  </p>
+
+  <div class="hobby-cards">
+    <div class="hobby-card">
+      <div class="hobby-image hobby-image-plants"></div>
+      <p class="hobby-title">nurturing my plants (they’re basically coworkers now)</p>
+    </div>
+    <div class="hobby-card">
+      <div class="hobby-image hobby-image-build"></div>
+      <p class="hobby-title"> From soldering switches to assembling PCs and Arduino/Raspberry projects. <br> I love building things from scratch.</p>
+    </div>
+    <div class="hobby-card">
+      <div class="hobby-image hobby-image-travel"></div>
+      <p class="hobby-title">Traveling!</p>
+    </div>
+        <div class="hobby-card">
+      <div class="hobby-image hobby-image-bun"></div>
+      <p class="hobby-title">Bunny Time! <br> my emotional support fluffballs. You’ll find them in 80% of my camera roll.</p>
+    </div>
+        <div class="hobby-card">
+      <div class="hobby-image hobby-image-draw"></div>
+      <p class="hobby-title">Drawing! <br> My favorite way to relax and bring ideas to life... one sketch at a time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Let’s get in touch!</h2>
+      <div class="contact-image">
+      </div>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/mgvyqgjr" method="POST">
+      <div class="name-fields">
+        <div>
+          <label>First Name (required)</label>
+          <input type="text" name="first-name" required>
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" name="last-name">
+        </div>
+      </div>
+
+      <label>Email (required)</label>
+      <input type="email" name="email" required>
+
+      <label>Message (required)</label>
+      <textarea required></textarea>
+      <input type="text" name="_gotcha" style="display:none">
+
+      <button type="submit">SEND</button>
+    </form>
+  </div>
+</section>
+
+
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo and Description -->
+    <div class="footer-section">
+      <h4 class="footer-logo">ALEARS</h4>
+      <p class="footer-description">© 2025 Aleyna Arslan <br> Coded with cozy playlists and bunny cuddles. ❤️🐰
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section footer-links">
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section contact-info">
+      <h4>Contact Me</h4>
+      <a href="mailto:aleyna.arslan557@gmail.com" class="email-link">
+        <span class="material-icons">email</span> aleyna.arslan557@gmail.com
+      </a>
+    </div>
+  </div>
+</footer>
+</html>
