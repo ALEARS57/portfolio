@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>˗ˏˋ ALEARS | Home ´ˎ˗</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- External Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <script src="../common/js/navbar.js" defer></script>
+  <script src="../common/js/canvasBackground.js" defer></script>
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="../home/index.html" class="logo">ALEARS</a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../work/index.html">Work</a>
+        <a href="../about/index.html">About</a>
+        <a href="your-cv-link" class="download-cv">Download CV</a>
+      </nav>
+      <div class="spacer"></div>
+    </div>
+
+    <!-- Header Content -->
+    <div class="header-content">
+      <div class="intro-text">
+        <h1 id="typingEffect"></h1>
+        <p>I am a self-taught designer based in Germany. I love solving problems, creating delightful user experiences,
+          and turning visions into reality.</p>
+      </div>
+      <div class="profile-image-scalable-wrapper">
+        <div class="profile-image-container">
+          <div class="outer-frame"></div>
+          <div class="inner-frame"></div>
+          <div class="window-bar">
+            <div class="dots">
+              <div class="dot green"></div>
+              <div class="dot blue"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <nav class="mobile-nav">
+        <div class="mobile-nav__header">
+          <div class="logo logo--centered">ALEARS</div>
+          <button class="mobile-nav__close" id="closeNav">×</button>
+        </div>
+        <ul class="mobile-nav__list">
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="#cv">Download CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="section-transition-bar">
+    <p>
+      sketch, prototype, iterate, repeat &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      aesthetics meet accessibility &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      finding harmony between grids and chaos &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      aligning pixels since 2020 &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      mind: creative, code: compiling &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      status: semi-functional human in progress &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+      currently resizing divs for a living &nbsp;&nbsp; ✦ &nbsp;&nbsp;
+    </p>
+  </div>
+
+  <!-- Work Section -->
+  <section id="work">
+    <section class="work-header">
+      <h2>Latest Work</h2>
+      <p>Get an inside look into my creative process and see what's come along.</p>
+      <a href="../work/index.html" class="show-all">Show all projects</a>
+    </section>
+
+    <div class="work-cards">
+
+      <a href="../case-studies/01_HDMCM/" class="work-card-link" aria-label="View Passion Project 1">
+        <div class="work-card">
+          <img src="../home/images/01_thumbnail.png" alt="Project Thumbnail">
+          <div class="project-tag school">
+            <span class="material-icons heart-icon">school</span>
+            <span>Academic Project</span>
+          </div>
+          <h3>HDM CampusMarkt</h3>
+          <p> Software Dev · UI Design</p>
+          <span class="view-project">View Project →</span>
+        </div>
+      </a>
+
+      <a href="../case-studies/02_MetalLyf/" class="work-card-link" aria-label="View Passion Project 2">
+        <div class="work-card">
+          <img src="../home/images/02_thumbnail.png" alt="Project Thumbnail">
+          <div class="project-tag school">
+            <span class="material-icons heart-icon">school</span>
+            <span>Academic Project</span>
+          </div>
+          <h3>MetalLyfe</h3>
+          <p>Mobile Interaction Design · UI/UX Design</p>
+          <span class="view-project">View Project →</span>
+        </div>
+      </a>
+
+      <a href="../case-studies/03_Paula/" class="work-card-link" aria-label="View Passion Project 3">
+        <div class="work-card">
+          <img src="../home/images/03_thumbnail.png" alt="Project Thumbnail">
+          <div class="project-tag passion">
+            <span class="material-icons heart-icon">favorite</span>
+            <span>Passion Project</span>
+          </div>
+          <h3>Paula</h3>
+          <p>UI/UX Design</p>
+          <span class="view-project">View Project →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo and Description -->
+      <div class="footer-section">
+        <h4 class="footer-logo">ALEARS</h4>
+              <p class="footer-description">© 2025 Aleyna Arslan <br> Coded with cozy playlists and bunny cuddles. ❤️🐰
+      </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section footer-links">
+        <div class="quick-links">
+          <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+        </ul>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="footer-section contact-info">
+        <h4>Contact Me</h4>
+        <a href="mailto:aleyna.arslan557@gmail.com" class="email-link">
+          <span class="material-icons">email</span> aleyna.arslan557@gmail.com
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
