@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>˗ˏˋ ALEARS | Works ´ˎ˗</title>
+
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Montserrat:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- External Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="scripts.js" defer></script>
+  <script src="../common/js/navbar.js" defer></script>
+  <script src="../common/js/canvasBackground.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="canvas-wrapper">
+      <canvas id="backgroundCanvas"></canvas>
+    </div>
+    <div class="header-content">
+      <h1>My Work</h1>
+      <p>Below are a few of the projects I’ve had the pleasure of working on. <br>
+        Check out my work in UI/UX design and other creative pursuits!</p>
+    </div>
+    <!-- Navigation -->
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="hamburger" id="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a href="../home/index.html" class="logo">ALEARS</a>
+      <nav class="nav-links">
+        <a href="../home/index.html">Home</a>
+        <a href="../work/index.html">Work</a>
+        <a href="../about/index.html">About</a>
+        <a href="your-cv-link" class="download-cv">Download CV</a>
+      </nav>
+      <div class="spacer"></div>
+    </div>
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+      <nav class="mobile-nav">
+        <div class="mobile-nav__header">
+          <div class="logo logo--centered">ALEARS</div>
+          <button class="mobile-nav__close" id="closeNav">×</button>
+        </div>
+        <ul class="mobile-nav__list">
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+          <li><a href="#cv">Download CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="work-gallery">
+  <h1>UI/UX Design</h1>
+  <div class="work-cards">
+    <a href="../case-studies/01_HDMCM" class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/01_thumbnail.png" alt="Project Thumbnail">
+        <div class="project-tag school"><span class="heart-icon">school</span>Academic Project</div>
+        <h3>HDM CampusMarkt</h3>
+        <p>A user-friendly marketplace app designed to streamline peer-to-peer product exchange within the university community.</p>
+        <span class="view-project">View project</span>
+      </div>
+    </a>
+
+    <a href="../case-studies/02_MetalLyf" class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/02_thumbnail.png" alt="Project Thumbnail">
+        <div class="project-tag school"><span class="heart-icon">school</span>Academic Project</div>
+        <h3>MetalLyfe</h3>
+        <p>A music streaming app with integrated social features that encourage sharing, discovery, and meaningful interaction between users.</p>
+        <span class="view-project">View project</span>
+      </div>
+    </a>
+
+    <a href="../case-studies/03_Paula" class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/03_thumbnail.png" alt="Project Thumbnail">
+        <div class="project-tag"><span class="heart-icon">favorite</span>Passion Project</div>
+        <h3>Paula</h3>
+        <p>A conversational AI assistant designed to support elderly users, especially those with dementia, by providing intuitive and human-like interactions.</p>
+        <span class="view-project">View project</span>
+      </div>
+    </a>
+
+    <a href="../case-studies/04_JD" class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/04_thumbnail.png" alt="Project Thumbnail">
+        <div class="project-tag"><span class="heart-icon">favorite</span>Passion Project</div>
+        <h3>John Deere Dashboard</h3>
+        <p>A product configurator concept built around John Deere’s brand identity, focusing on usability, clarity, and a smooth customization flow.</p>
+        <span class="view-project">View project</span>
+      </div>
+    </a>
+        <a href="../case-studies/05_NextCl" class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/05_thumbnail.png" alt="Project Thumbnail">
+        <div class="project-tag school"><span class="heart-icon">school</span>Academic Project</div>
+        <h3>NextCloud Poll Idea</h3>
+        <p>An interface extension for NextCloud that introduces polls within chat, empowering users to make collaborative decisions with ease.</p>
+        <span class="view-project">View project</span>
+      </div>
+    </a>
+  </div>
+</section>
+<section class="work-gallery3">
+  <h1>Art</h1>
+  <div class="work-cards">
+    <a class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/art1.png" alt="Graphic Poster">
+        <h3>Original Character Illustration</h3>
+        <p>A stylized portrait I made of my character</p>
+      </div>
+    </a>
+
+    <a class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/art2.png" alt="Graphic Poster">
+        <h3>Original Character Illustration</h3>
+        <p>Another stylized portrait I made of my friends character :D </p>
+      </div>
+    </a>
+
+        <a class="work-card-link">
+      <div class="work-card">
+        <img src="../work/images/art3.jpg" alt="Graphic Poster">
+        <h3>Pencil Portrait Study</h3>
+        <p>A hand-drawn portrait study focused on tone, emotion, and shading technique.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+  </main>
+</body>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Logo and Description -->
+    <div class="footer-section">
+      <h4 class="footer-logo">ALEARS</h4>
+      <p class="footer-description">© 2025 Aleyna Arslan <br> Coded with cozy playlists and bunny cuddles. ❤️🐰
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section footer-links">
+      <div class="quick-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../home/index.html">Home</a></li>
+          <li><a href="../work/index.html">Work</a></li>
+          <li><a href="../about/index.html">About</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section contact-info">
+      <h4>Contact Me</h4>
+      <a href="mailto:aleyna.arslan557@gmail.com" class="email-link">
+        <span class="material-icons">email</span> aleyna.arslan557@gmail.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+</html>
